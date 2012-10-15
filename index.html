@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Welcome to HTML5, buddy !</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <audio src="morceau.mp3" controls>
+    </audio>
+    
+    <div class="form">
+        <form action="#" method="post">
+            <label for="test">Test :</label>
+            <input id="test" name="test" type="text" placeholder="Champ vide &agrave; remplir" />
+            
+            <label for="calendrier">Calendrier :</label>
+            <input id="calendrier" name="calendrier" type="datetime" />
+            <label for="email">Email :</label>
+            <input id="email" multiple type="email" required>
+            <label for="fichier">Fichier :</label>
+            <input id="fichier" multiple type="file" required>
+            <label for="date">Date :</label>
+        	<input id="date" type="date">
+            <label for="number">Number (0 &agrave; 100 avec pas de 5) :</label>
+            <input id="number" type="number" min=0 max=100 step=5>
+            <label for="range">Range :</label>
+            <input id="range" type="range">
+            <label for="color">Color :</label>
+            <input id="color" type="color">
+            <label for="civilite" autofocus>Civilit&eacute; :</label>
+            <input id=civilite type=text list=maliste>
+            <datalist id="maliste">
+                <option label="M." value="M.">
+                <option label="Mlle" value="Mlle">
+                <option label=Prof value="Professeur fou">
+            </datalist>
+            
+            <input type="submit">
+        </form>
+    </div>
+    
+
+    <div id="nav">
+        <ul>
+        	<li><a href="#">Lien 1</a></li>
+            <li><a href="#">Lien 2</a></li>
+            <li><a href="#">Lien 3</a></li>
+            <li><a href="#">Lien 4</a></li>
+        </ul>
+    </div>
+    <div id="image">
+    	<a href="#">
+        	<img src="fleche.png" />
+        </a>
+    </div>
+    <form action="/" >
+    	<input type="button" value="Bouton" id="bouton">
+    </form>
+    
+    <a href="#" class="foo">Bouton</a>
+    
+    <div id="superBloc">
+    	Je suis un super texte de travers !
+    </div>
+    
+
+</body>
+</html>
